@@ -34,3 +34,8 @@ resource "azurerm_storage_account" "sa" {
 
   infrastructure_encryption_enabled = true
 }
+
+import {
+  to = azurerm_storage_account.sa
+  id = "/subscriptions/77c31ba8-e2cd-4fa2-84a7-766748b0b30d/resourceGroups/secure-app-starter-rg/providers/Microsoft.Storage/storageAccounts/secureappsa"
+}
