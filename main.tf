@@ -8,11 +8,7 @@ terraform {
 }
 
   provider "azurerm" {
-  features {
-    storage {
-      use_azuread_auth = true
-    }
-  }
+  features {}
 }
 
 resource "azurerm_resource_group" "rg" {
