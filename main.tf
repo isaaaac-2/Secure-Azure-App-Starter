@@ -50,3 +50,8 @@ import {
   to = azurerm_network_security_group.nsg
   id = "/subscriptions/77c31ba8-e2cd-4fa2-84a7-766748b0b30d/resourceGroups/secure-app-starter-rg/providers/Microsoft.Network/networkSecurityGroups/secure-app-nsg"
 }
+
+import {
+  to = azurerm_subnet_network_security_group_association.nsg_assoc
+  id = "/subscriptions/77c31ba8-e2cd-4fa2-84a7-766748b0b30d/resourceGroups/secure-app-starter-rg/providers/Microsoft.Network/virtualNetworks/secure-app-vnet/subnets/default"
+}
