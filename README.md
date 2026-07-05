@@ -37,7 +37,7 @@ Catching misconfigurations at commit time prevents the kind of drift that leads 
 
 ## Architecture
 
-text
+```text
 Push to main
      │
      ▼
@@ -77,7 +77,7 @@ Push to main
 │  │ ✓ Network ACLs (Deny default)      │  │
 │  └────────────────────────────────────┘  │
 └──────────────────────────────────────────┘
-
+```
 
 ## Getting Started
 
