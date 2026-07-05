@@ -7,9 +7,12 @@ terraform {
   }
 }
 
-provider "azurerm" {
-  features {}
-
+  provider "azurerm" {
+  features {
+    storage {
+      use_azuread_auth = true
+    }
+  }
 }
 
 resource "azurerm_resource_group" "rg" {
