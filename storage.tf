@@ -12,6 +12,9 @@ resource "azurerm_storage_account" "sa" {
 
   blob_properties {
     versioning_enabled = true
+    delete_retention_policy {
+    days = 7
+    }
   }
 
   queue_properties {
