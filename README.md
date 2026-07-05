@@ -7,3 +7,5 @@ A CI/CD gate that runs Checkov and Trivy on every push, blocking commits with po
 
 ## Why does it matter?
 Catching misconfigurations at commit time prevents the kind of drift that leads to real breaches. One blocked commit today is one less incident response tomorrow.
+
+## Setup
