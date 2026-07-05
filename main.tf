@@ -30,3 +30,23 @@ resource "azurerm_subnet" "default" {
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.0.1.0/24"]
 }
+
+import {
+  to = azurerm_resource_group.rg
+  id = "/subscriptions/77c31ba8-e2cd-4fa2-84a7-766748b0b30d/resourceGroups/secure-app-starter-rg"
+}
+
+import {
+  to = azurerm_virtual_network.vnet
+  id = "/subscriptions/77c31ba8-e2cd-4fa2-84a7-766748b0b30d/resourceGroups/secure-app-starter-rg/providers/Microsoft.Network/virtualNetworks/secure-app-vnet"
+}
+
+import {
+  to = azurerm_subnet.default
+  id = "/subscriptions/77c31ba8-e2cd-4fa2-84a7-766748b0b30d/resourceGroups/secure-app-starter-rg/providers/Microsoft.Network/virtualNetworks/secure-app-vnet/subnets/default"
+}
+
+import {
+  to = azurerm_network_security_group.nsg
+  id = "/subscriptions/77c31ba8-e2cd-4fa2-84a7-766748b0b30d/resourceGroups/secure-app-starter-rg/providers/Microsoft.Network/networkSecurityGroups/secure-app-nsg"
+}
