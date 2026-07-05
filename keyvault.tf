@@ -29,3 +29,8 @@ resource "azurerm_key_vault" "kv" {
 }
 
 data "azurerm_client_config" "current" {}
+
+import {
+  to = azurerm_key_vault.kv
+  id = "/subscriptions/77c31ba8-e2cd-4fa2-84a7-766748b0b30d/resourceGroups/secure-app-starter-rg/providers/Microsoft.KeyVault/vaults/secure-app-kv"
+}
