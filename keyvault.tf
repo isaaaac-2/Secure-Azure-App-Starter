@@ -15,8 +15,9 @@ resource "azurerm_key_vault" "kv" {
       "Set",
       "Delete"
     ]
-    
-  }resource "azurerm_key_vault" "kv" {
+  }
+  
+  resource "azurerm_key_vault" "kv" {
   name                = "secure-app-kv"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
