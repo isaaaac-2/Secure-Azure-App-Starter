@@ -3,9 +3,11 @@
 A DevSecOps-ready Azure infrastructure template with automated security scanning and CI/CD deployment. It is a CI/CD gate that runs Checkov and Trivy on every push, blocking commits with policy violations, exposed secrets, or known CVEs before they reach the infrastructure.
 
 ## What problem am I solving?
+
 Azure environments often accumulate unvalidated Terraform configs and unscanned secrets that slip through manual reviews. These gaps become attack surfaces before anyone notices.
 
 ## Why does it matter?
+
 Catching misconfigurations at commit time prevents the kind of drift that leads to real breaches. One blocked commit today is one less incident response tomorrow.
 
 ## What's Deployed
