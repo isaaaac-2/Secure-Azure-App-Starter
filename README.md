@@ -81,4 +81,3 @@ Catching misconfigurations at commit time prevents the kind of drift that leads 
 1. Clone this repo
 2. Configure Azure service principal as GitHub secrets (ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_SUBSCRIPTION_ID, ARM_TENANT_ID)
 3. Push to main and watch the pipeline deploy
-
