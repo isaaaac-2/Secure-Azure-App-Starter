@@ -92,9 +92,3 @@ Catching misconfigurations at commit time prevents the kind of drift that leads 
 - *Shared Key Auth (CKV2_AZURE_40):* Storage account key access is enabled to allow Terraform provisioning. In production, disable after deploy and use Azure AD auth exclusively. Network ACLs and disabled public access mitigate exposure.
 - *Private Endpoints (CKV2_AZURE_32, CKV2_AZURE_33):* Key Vault and Storage Account use disabled public access + network ACLs instead of private endpoints. Sufficient for portfolio demonstration; production deployments should use Private Link.
 - *Customer Managed Keys (CKV2_AZURE_1):* Storage uses platform-managed encryption. CMK adds complexity (Key Vault + managed identity + key rotation) and is recommended for regulated workloads.
-
-## Getting Started
-
-1. Clone this repo
-2. Configure Azure service principal as GitHub secrets (ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_SUBSCRIPTION_ID, ARM_TENANT_ID)
-3. Push to main and watch the pipeline deploy
